@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  margin: 1em;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 1em;
+  text-align: center;
+}
+
+.app button {
+  display: inline-block;
+  position: absolute;
+  left: 8em;
+  top: 9em;
+  transform: calc(50%, 50%);
+}
+
+button {
+  padding: .6em 1em;
+  margin: .2em .3em;
+  font-size: .9rem;
+  font-weight: bold;
+  border-radius: .5em;
+  border: 1px solid gray;
+  background-color: dodgerblue;
+  cursor: pointer;
+  transition: scale(1) .5s all linear;
+  color: white;
+}
+
+.sign-out {
+  margin-top: 1em;
+}
+
+button:hover {
+  transform: scale(1.02);
+}
+
+input {
+  padding: .5em 1em;
+  border-radius: .5em;
+  border: 1px solid gray;
+}
