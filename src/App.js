@@ -18,9 +18,9 @@ function App() {
   const signOutofGoogle = async () => {
     try {
       await signOut(auth)
-      setIsAuth("")
       cookies.remove("auth-token")
       setIsAuth(false)
+      setRoom("")
     } catch (err) {
       console.error(err)
     }
